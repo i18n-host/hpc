@@ -8,8 +8,9 @@ import { writeFileSync } from "node:fs"
 
 const main = async (code, filename) => {
   code = putout(code, {
-    plugins: ["esm", "convert-const-to-let"],
+    plugins: ["esm"],
     rules: {
+      "esm/inline-export": false,
       "esm/remove-empty-import": [
         "off",
         {

@@ -16,9 +16,11 @@ export {
   ,
   {
     plugins: [
-      "esm",
-      "convert-const-to-let",
+      "esm"
     ],
+    rules: {
+      "esm/inline-export": false
+    },
     printer: [
       'putout', {
         format: {
