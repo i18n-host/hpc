@@ -1,5 +1,7 @@
 # @3-/webc
 
+项目模板 [github.com/i18n-site/template-webc](https://github.com/i18n-site/template-webc)
+
 ```
 <style lang="stylus">
 :global(_)

@@ -1,3 +1,12 @@
 # @3-/webc
 
-[test/main.coffee](./test/main.coffee) :
+项目模板 [github.com/i18n-site/template-webc](https://github.com/i18n-site/template-webc)
+
+```
+<style lang="stylus">
+:global(_)
+  background red
+</stylus>
+```
+
+这可以设置网页组件本身的样式
