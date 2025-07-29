@@ -1,6 +1,6 @@
 {
   "name": "@3-/minifyjs",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "type": "module",
   "exports": {
     ".": "./mod.js",
@@ -10,6 +10,7 @@
     "./*"
   ],
   "dependencies": {
+    "@putout/plugin-convert-const-to-let": "^5.0.0",
     "@putout/plugin-esm": "^4.9.0",
     "@swc/core": "^1.13.3",
     "eslint-plugin-prefer-arrow-functions": "^3.6.2",

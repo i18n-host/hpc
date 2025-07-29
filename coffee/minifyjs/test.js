@@ -1,30 +1,34 @@
 #!/usr/bin/env node
 
 import putout from "putout"
-import {readFileSync} from 'node:fs'  
 
 console.log(putout(
-`
-import {x} from 'a'; 
-import {b} from 'a'
-
-const a = "n'"
-`,
+  `
+let hydrate_node;
+function set_hydrate_node(node) {
+}
+(()=>{hydrate_node=1})();
+export {
+  set_hydrate_node as i,
+  hydrate_node as k,
+};
+  `
+  ,
   {
-		plugins: [
-      "esm"
+    plugins: [
+      "esm",
+      "convert-const-to-let",
     ],
     printer: [
-        'putout', {
-          format: {
-              quote: '"',
-          },
-          semantics: {
-              encodeSingleQuote: false,
-              encodeDoubleQuote: true,
-          }
+      'putout', {
+        format: {
+          quote: '"',
+        },
+        semantics: {
+          encodeSingleQuote: false,
+          encodeDoubleQuote: true,
         }
+      }
     ]
   }
 ).code)
-
