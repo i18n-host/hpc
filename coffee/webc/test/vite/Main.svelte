@@ -13,7 +13,7 @@ h1 test
 
 <style lang="stylus">
 :global(_)
-	overflow hidden
+  overflow hidden
 
 h1
   color #f00
