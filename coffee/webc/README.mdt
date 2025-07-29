@@ -2,13 +2,19 @@
 
 项目模板 [github.com/i18n-site/template-webc](https://github.com/i18n-site/template-webc)
 
+## `:global(_)`
+
+`:global(_) ` 可以设置网页组件本身的样式
+
+比如:
+
 ```
 <style lang="stylus">
 :global(_)
   background red
+  &>h1
+    color #0f0
 </stylus>
 ```
 
-这可以设置网页组件本身的样式
-
-组件的css和内容分离
+## 组件的css和内容分离
