@@ -10,10 +10,10 @@
     "./*"
   ],
   "dependencies": {
-    "@putout/plugin-esm": "^4.9.0",
+    "@putout/plugin-esm": "^5.0.0",
     "@swc/core": "^1.13.3",
     "eslint-plugin-prefer-arrow-functions": "^3.6.2",
-    "putout": "^40.4.2"
+    "putout": "^40.4.3"
   },
   "repository": {
     "type": "git",
