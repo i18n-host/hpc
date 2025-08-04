@@ -1,12 +1,18 @@
 #!/usr/bin/env bun
 
-import putout from "putout"
-import { mkdir, readFile, writeFile } from "node:fs/promises"
-import { minify } from "@swc/core"
 import func2arrow from "./func2arrow.js"
-import { writeFileSync } from "node:fs"
+import putout from "putout"
+import { minify } from "@swc/core"
+import { transform } from "@babel/core"
 
 const main = async (code, filename) => {
+	code = transform(code, {
+		comments: false,
+		sourceMaps: false,
+		configFile: false,
+		babelrc: false,
+	}).code
+
 	code = putout(code, {
 		plugins: ["esm"],
 		rules: {
