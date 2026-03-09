@@ -10,11 +10,11 @@
 		"./*"
 	],
 	"dependencies": {
-		"@babel/core": "^7.28.0",
-		"@putout/plugin-esm": "^5.0.0",
-		"@swc/core": "^1.13.3",
-		"eslint-plugin-prefer-arrow-functions": "^3.6.2",
-		"putout": "^40.5.0"
+		"@babel/core": "^7.29.0",
+		"@putout/plugin-esm": "^10.4.0",
+		"@swc/core": "^1.15.18",
+		"eslint-plugin-prefer-arrow-functions": "^3.9.1",
+		"putout": "^42.0.25"
 	},
 	"repository": {
 		"type": "git",
