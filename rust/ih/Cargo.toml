@@ -19,20 +19,20 @@ err = ["dep:anyhow"]
 all-features = true
 
 [dependencies]
-anyhow = { version = "1.0.98", optional = true }
+anyhow = { version = "1.0.102", optional = true }
 lazy_static = "1.5.0"
 pb-jelly = "0.0.17"
-sonic-rs = { version = "0.5.3", optional = true }
-xerr = { version = "0.1.15", optional = true }
+sonic-rs = { version = "0.5.7", optional = true }
+xerr = { version = "0.1.16", optional = true }
 
 [dev-dependencies]
-aok = "0.1.17"
+aok = "0.1.18"
 loginit = "0.1.18"
 static_init = "1.0.4"
-tracing = "0.1.41"
+tracing = "0.1.44"
 
 [dev-dependencies.tokio]
-version = "1.47.0"
+version = "1.50.0"
 features = ["macros", "rt", "rt-multi-thread", "time", "sync"]
 
 [package.metadata.cargo-machete]
